@@ -1,0 +1,159 @@
+/* table style */
+.tbl{
+	width:800px;
+	overflow-y:hidden;
+	overflow-x:auto;
+	margin:0 auto 20px;
+}
+.tbl table{
+
+}
+.tbl th{
+	padding:5px;
+	border:1px solid #dddddd;
+}
+.tbl td{
+	padding:5px;
+	border:1px solid #dddddd;
+}
+.tbl thead th{
+	padding:5px;
+}
+.tbl tbody th{
+
+}
+.tbl.nodata{
+	min-height:250px;
+	line-height:250px;
+	text-align:center;
+}
+/* table list style */
+.tbl-list{
+
+}
+.tbl-list table{
+
+}
+
+.tbl-list td{
+text-align:center;
+}
+.tbl-list td a{
+/* 말줄임 처리 */
+	overflow:hidden;
+	display:block;
+	max-width:100%;  /*모바일때문에 사용-무조건 사이즈숫자 입력되어야됨*/
+	white-space:nowrap; /*무조건 한줄로 보이게 */
+	text-overflow:ellipsis;
+}
+.tbl-list td a:hover{
+	text-decoration:underline;
+}
+/* paging navigation */
+.paging{
+	width:800px;
+	margin:0 auto;
+	text-align:center;
+}
+
+.paging a,
+.paging strong{
+	display:inline-block;
+	min-width:40px;
+	padding:5px;
+	border:1px solid #ddd;
+}
+.paging strong{
+
+}
+.paging a{
+
+}
+.paging a:hover{
+	background-color:#222;
+	color:#fff;
+}
+.paging .btn-first{
+
+}
+.paging .btn-last{
+	
+}
+.paging .btn-prev{
+	
+}
+.paging .btn-next{
+	
+}
+
+/* searchbox */
+.searchbox{
+	width:800px;
+	margin:0 auto 20px;
+	text-align:center;
+}
+
+/*prevnext 이전글 다음글 */
+.prevnext{
+	width:800px;
+	margin:0 auto 20px;
+	border:2px solid #222;
+	border-right:0;
+	border-left:0;
+}
+
+.prevnext dl{
+
+}
+.prevnext dl:first-child{
+	border-bottom:1px solid #ddd;
+}
+.prevnext dl::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+.prevnext dt{
+	position:relative;
+	float:left;
+	width:100px;
+	height:40px;
+	padding:5px;
+	line-height:30px;
+	text-align:center;
+}
+
+.prevnext dd::after{
+	content:"";
+	display:inline-block;
+	position:absolute;
+	top:50%;
+	right:0;
+	width:1px;
+	height:5px;
+	background-color:#ddd;
+	transform:translate3d();
+}
+.prevnext dd{
+	position:relative;
+	height:40px;
+	margin-left:100px;
+	padding:5px;
+	line-height:40px;
+}
+.prevnext a{
+	overflow:hidden;
+	display:block;
+	/* max-width:100%; */
+	width:calc(100% - 100px);
+	white-space:nowrap;
+	text-align:center;
+}
+
+.prevnext span{
+	position:relative;
+	top:50%;
+	right:5px;
+	transform:translateY(-50%);
+}

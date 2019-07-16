@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>css 속성 기초</title>
+	<style>
+		/* reset */
+		*{
+			margin:0;
+			padding:0;
+			line-height:1;
+			color:#222;
+			font-size:15px;
+			box-sizing:border-box;
+		}
+		html,body{
+			height:5000px;
+		}
+		body:after{
+			content:"";
+			display:block;
+			position:fixed;
+			top:0;
+			left:50%;
+			width:1px;
+			height:100%;
+			background-color:darkcyan;
+			z-index:100;
+		}
+		body:before{
+			content:"";
+			display:block;
+			position:fixed;
+			top:50%;
+			left:0;
+			width:100%;
+			height:1px;
+			background-color:darkcyan;
+			z-index:100;
+		}
+		#boxWrap{
+
+		}
+		.boxwrap{
+			position:absolute;
+			top:0;
+			right:0;
+			bottom:0;
+			left:0;
+			width:500px;
+			height:500px;
+			margin:auto;
+			border:1px solid #000;
+			/* border-radius:50%; */
+			border-radius:0 100px 0 100px;
+		}
+		.boxwrap div{
+			/* position:static; */
+			/* position:relative; */
+			/* position:absolute; */
+			/* position:fixed; */
+			position:absolute;
+			width:100px;
+			height:100px;
+			background-color:aqua;
+		}
+		.boxwrap .box1{
+			top:40px;
+			background-color:black;
+		}
+		.boxwrap .box2{
+			top:40px;
+			right:0;
+			background-color:blue;
+		}
+		.boxwrap .box3{
+			/* contents box 정가운데 정렬하는 방법1 */
+			/* top:50%;
+			left:50%;
+			margin-top:-50px;
+			margin-left:-50px; */
+
+			/* 2번째 방법 */
+			/* top:0;
+			right:0;
+			bottom:0;
+			left:0;
+			margin:auto; */
+
+			/* 3번째 방법 */
+			position:fixed;
+			top:50%;
+			left:50%;
+			transform:translate(-50%,-50%);
+			background-color:brown;
+		}
+		.boxwrap .box4{
+			bottom:100px;
+			right:0;
+			background-color:yellow;
+		}
+		.boxwrap .box5{
+			bottom:100px;
+			left:0;
+			background-color:red;
+		}
+	</style>
+</head>
+<body>
+	<div id="boxWrap" class="boxwrap">
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+		<div class="box4"></div>
+		<div class="box5"></div>
+	</div>
+<!-- 
+overflow
+visibility
+display
+
+position
+top
+right
+bottom
+left
+z-index
+
+float
+clear
+
+width
+height
+margin:0;
+margin:0 auto;
+margin:0 auto 0;
+margin:0 auto 0 auto;
+margin-top:0;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding:0;
+padding:0 0;
+padding:0 0 0;
+padding:0 0 0 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+
+border:1px solid black;
+border-top-width:2px;
+border-top:1px solid black;
+border-right:1px solid black;
+border-bottom:1px solid black;
+border-left:1px solid black;
+border-style:solid,dotted,dashed;
+border-width:1px;
+border-color:black;
+border-top-color:blue;
+color값 지정하는 방식 - black, #000000, #000, rgb(0,0,0), rgba(0,0,0,.5)
+
+border-radius
+
+background
+color
+font-size
+font-family
+font-weight
+
+box-shadow
+text-shadow
+
+box-sizing:border-box
+
+transform
+cursor:pointer
+-->
+</body>
+</html>

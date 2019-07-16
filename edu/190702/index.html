@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>백그라운드</title>
+</head>
+<style>
+/* reset*/
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	
+}
+html,body{
+	height:100%;
+}
+div{
+	width:100%;
+	height:100%;
+
+/*background:#000 url() no-repeat 0 0 fixed/100%   ← 축약형 (아래처럼 각각 써도되고, 아니면 한줄로 띄워쓰기(+)해서 써도되고)
+background
+background-color:black
+background-repaeat:repeat(반복) / no-repeat(반복X) / repeat-x(x축으로만 반복) / repeat-y(y축으로만 반복)
+background-position-x:50% 50%(정한가운데) / center; / left middle;
+background-position-y:
+background-image:url(" ");
+background-attachment: (스크롤 되었을때 고정을 할껀지 움직이게 할껀지) scroll, fixed
+background-size: contain(가로세로 균등하게 사이즈 줄여서 보여줌) / cover(다채움), 100% 100% (사이즈 지정 가능)  >>모바일에서 많이 사용함
+*/
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	background-size:100% 100%;
+	background-attachment:fixed;
+}
+
+div:nth-child(1){
+	background-image:url(image/1.jpg);
+}
+
+div:nth-child(2){
+	background-image:url(image/2.jpg);
+}
+
+div:nth-child(3){
+	background-image:url(image/3.jpg);
+}
+
+div:nth-child(4){
+	background-image:url(image/4.jpg);
+}
+
+.box{
+	/* background-repeat:no-repeat;
+	background-position:100% 90%;
+	background-image:url(image/icon/ico_s1_on.png);
+	 */
+	background:transparent url(image/icon/ico_s1_on.png) no-repeat 100% 90% fixed;
+	background-size:auto;
+}
+
+.box1{
+	background-repeat:no-repeat;
+	background-position:0 0;
+	background-image:url(image/icon/ico_s1_off.png);
+	background-attachment:unset;
+	background-size:88px 88px;
+}
+
+.box1:hover{
+		background-image:url(image/icon/ico_s1_on.png);
+}
+
+.sprite{
+	width:88px;
+	height:88px;
+	background-repeat:no-repeat;
+	background-position:-92px 0;
+	background-image:url(image/icon/icon_sample.png);
+	background-attachment:unset;
+	background-size:732px 227px;
+}
+.sprite:hover{
+		background-position:-92 -92px
+}
+
+.sprite:hover{
+		background-position:0 0;
+}
+
+.sprite:hover{
+		background-position:-184 -92px
+}
+.sprite:hover{
+		background-position:-276 -92px
+}
+.sprite:hover{
+		background-position:-552 -92px
+}
+.sprite:hover{
+		background-position:-92 -92px
+}
+
+</style>
+
+
+<body>
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div class="box"></div>
+<div class="box1"></div>
+<div class="sprite sprite0"></div>
+<div class="sprite sprite1"></div>
+<div class="sprite sprite2"></div>
+<div class="sprite sprite3"></div>
+<div class="sprite sprite4"></div>
+<div class="sprite sprite5"></div>
+</body>
+</html>

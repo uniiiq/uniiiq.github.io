@@ -1,0 +1,27 @@
+무조건 시작할때
+html:5 탭키 하면 ↓아래와 같이 뜸.
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">  ★UTF-8  다국어 지원 된다 라는 뜻
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>  ★사이트 떳을때 보이는 이름 적는곳
+</head>
+<body>      ★헤드와 바디안에 쓰는거는 표준아님
+    
+</body>
+</html>
+
+
+ctrl+, = 설정 창
+글꼴크키: 14
+탭 한개 공백수: 2
+Editor: Insert spaces : 해제
+창아래 Tab크기: 2로 설정
+
+보기 > 공백설정/해제 및 렌더링  : 띄워쓰기한것들 보여줌
+
+

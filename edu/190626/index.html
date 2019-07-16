@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>속성 기초</title>
+</head>
+	<!--
+	link
+	<link rel"stylesheet" type="hext/css" href="reset.css">
+	import
+	style
+	inline
+	-->
+<style>
+	/* reset */   
+	*{
+		margin:0;
+		padding:0;
+		line-height:1;
+		font sizing:15px;
+		color:#222;
+		box-sizing:border-box;
+
+	}
+	html,body{
+		height:40%;
+	}
+	#boxWrap{
+
+	}
+	.boxwrap{
+
+
+	}
+	.boxwrap{
+		position: absolute;
+		top:0;
+		right:0;
+		bottom:0;
+		left:0;
+		margin:auto;
+		width:500px;
+		height:500px;
+		border:1px solid black;
+		/* border-radius:50%; */
+		border-radius:0 100px 0 100px;
+
+	}
+	.boxwrap div{
+		/* position: static; */
+		/* position: relative; */
+		/* position: absolute; */
+		/* position: fixed; */
+		position: absolute;
+		width:100px;
+		height:100px;
+		background color: #000;
+	}
+	.box1{
+		top:40px;
+		left:0px;
+		background-color: thistle;
+		z-index:1;
+	}
+	.box2{
+		top:40;
+		right:0;
+		background-color: cornflowerblue;
+	}
+	.box3{
+			/* contents box 정가운데 정렬하는 방법1 */
+		/* top:50%;
+		left:50%;
+		margin-top:-50px;
+		margin-left:-50px;*/
+				
+			/*2번째 방법 */
+			/* top:0;
+			right: 0;
+			bottom:0;
+			left:0;
+			margin:auto; */
+
+			/* 3번째 방법>>  */
+			position:fixed;
+			top:50%;
+			left:50%;
+			transform:translate(-50%,-50%);
+
+		background-color: rosybrown;
+	
+	}
+	.box4{
+		bottom:0;
+		right:0;
+	background-color: darkturquoise;
+
+	}
+	.box5{
+		bottom:0;
+		left:0;
+		background-color: hotpink;
+	}
+
+
+
+
+</style>
+
+
+
+
+
+
+<body>
+<div id="boxWrap" class="boxwrap">
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+	<div class="box4"></div>
+	<div class="box5"></div>
+</div>
+
+<!--
+	overflow
+	visibility
+	display
+
+	position
+	top
+	right
+	bottom
+	left
+	z-index
+
+	float
+	clear
+
+
+	width
+	height
+	margin:0; 시계방향으로
+	margin:0 auto   앞에있는건 상하/ 뒤에있는건 좌우
+	margin-top
+	margin-right
+	margin-bottm
+	margin-left
+
+	padding:0;
+
+	border:1px solid black;
+	corder-top:1px solid black;
+				-right
+				-bottom
+				-left
+	border-style:solid(실선),dotted(점선),dashed(----);
+	border-width(두께):1px;
+	border-color:black;
+	border-top-color:blue;
+	color값 지정하는 방법 3가지
+
+
+	border-radius
+
+	background
+	color
+	font-size
+	font-family
+	font-weight
+
+	box-shadow
+	text-shadow
+
+	box-sizing:border-box  ★중요
+
+	transform
+	cursor:pointer
+-->
+</body>
+</html>

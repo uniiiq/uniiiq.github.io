@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>css속성 알아보기</title>
+</head>
+<body>
+	<!--
+
+
+
+		css 속성 (나열순서는 아래 나열순서대로 하는게 좋음)
+overflow - 박스크기에 콘텐츠 내용이 넘칠경우 제어함.
+overflow:auto;
+overflow:scroll;
+overflow:hidden;
+overflow-X:auto;
+overplow-y:auto;
+
+display
+visivility
+
+position
+static;relatice,absolute,fixed
+relative - 상대값 (본인이 기준이 되어서 위치 움직임)
+absolute - 절대값 (부모기준에 따라서 움직임. 부모에 position속성이 있느냐 없느냐에 따라 위치값이 달라짐)
+fixed - 고정값 (무조건 부모는 body기준으로 고정됨) ex) top버튼, 우측 퀵메뉴 등등
+
+top
+right
+left
+z-index
+
+float
+clear
+
+width - 가로 크기
+height - 세로 크키
+margin - 바깥 여백
+padding - 안쪽 여백
+border - 테두리
+
+아래는 디자인할때 사용
+background
+color
+font-size
+font-family
+font-transform
+
+text-decoration
+box-shadow
+transform
+
+box-sizing
+
+
+	-->
+
+
+	
+
+	<div class="visibox">
+		하단에 위치한 박스
+	</div>
+	<style>
+				.posbox{
+					position:relatice;
+					width:500px;
+					height:500px;
+					border:1px solid #000;
+					box-sizing:border-box;
+				}
+				.posbox div{
+					position:absolute;
+					top:50%;
+					left:50%;
+					width:200px;
+					height:200px;
+					margin-top:-100px;
+					margin-left:-100px;
+					background-color: aqua;
+					box-sizing:border-box;
+				}
+				.posbox .box1{
+					background-color: aquamarine;
+					
+				}
+				.posbox .box2{
+					background-color: blueviolet;
+					
+				}
+				.posbox .box3{
+				/*background-color: coral;*/
+					
+				}
+				.posbox .box4{
+				/*	background-color: deeppink;*/
+					
+				}
+				.posbox .box5{
+				/*background-color: deepskyblue;*/
+					
+				}
+				
+				<div class=
+	</style>
+	</div>
+</body>
+</html>

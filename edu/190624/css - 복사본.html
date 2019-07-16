@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>css속성 알아보기</title>
+</head>
+<body>
+	<!--
+
+
+
+		css 속성 (나열순서는 아래 나열순서대로 하는게 좋음)
+overflow - 박스크기에 콘텐츠 내용이 넘칠경우 제어함.
+overflow:auto;
+overflow:scroll;
+overflow:hidden;
+overflow-X:auto;
+overplow-y:auto;
+
+display
+visivility
+
+position
+static;relatice,absolute,fixed
+relative - 상대값 (본인이 기준이 되어서 위치 움직임)
+absolute - 절대값 (부모기준에 따라서 움직임. 부모에 position속성이 있느냐 없느냐에 따라 위치값이 달라짐)
+fixed - 고정값 (무조건 부모는 body기준으로 고정됨) ex) top버튼, 우측 퀵메뉴 등등
+
+top
+right
+left
+z-index
+
+float
+clear
+
+width - 가로 크기
+height - 세로 크키
+margin - 바깥 여백
+padding - 안쪽 여백
+border - 테두리
+
+아래는 디자인할때 사용
+background
+color
+font-size
+font-family
+font-transform
+
+text-decoration
+box-shadow
+transform
+
+box-sizing
+
+
+	-->
+
+	<div class="overbox">
+			뉴스관련도순  최신순관련도순
+			원·달러 환율 두 달 
+			원·달러 환율 두 달 만에 1150원대로 '뚝' 조선비즈언론사 선정  3시간 전  네이버뉴스  보내기
+			미 금리인하 기대감에 달러 약세로…1156.5원 마감 미국 연방준비제도(Fed)의 연내 금리인하 기대감으로 원·달러 환율이 약 두 달 만에 1150원대로 내려왔다. 24일 서울외환시장에서 원·달러 환율은 전거래일보다 7....
+			 힘 빠지는 달러…원/달러 환율 1150원대로 하락 머니투데이  4시간 전 네이버뉴스
+			 [외환마감]달러 값 3개월來 최저…원·달러 환율 1150원대 하락 이데일리  4시간 전 네이버뉴스
+			관련뉴스 전체보기
+			코스피 상승 마감…원·달러 환율 7.5원 내려 중소기업신문  4시간 전  보내기
+			코스닥시장에서 외국인과 기관이 각각 693억원, 534억원을 순매도했고 개인은 1236억원을 순매수했다. 한편, 이날 서울 외환시장에서 원·달러 환율은 전장보다 7.5원 내린 달러당 1156.5원으로 장을 마쳤다.
+			 코스닥 하락, 환율 하락 마감 뉴시스  5시간 전 네이버뉴스
+			 [시황]코스피 2126.33(▲0.03%), 코스닥 717.69(▼0.68%), 원·달러 환율 115... 뉴시스  5시간 전 네이버뉴스
+			원‧달러 환율 1156.5
+			원‧달러 환율 1156.5원 마감…약달러 흐름에 7.5원 하락 FETV  5시간 전  보내기
+			24일 원‧달러 환율이 7.5원 내린 1156.5원을 기록하며 약 두 달 만에 1150원대로 내려앉았다. 이날 서울 외환시장에서 원‧달러 환율은 전일 종가보다 7.5원 내린 1156.5원으로 거래를 끝냈다. 종가 기준으로 원...
+			 약달러 기조 확산, 원·달러 환율 '또 7.5원↓'···두 달 새 1150원대 급락 서울파이낸스  4시간 전
+			 달러/원 환율 7.5원↓ 1156.5원 마감...2개월 만에 최저 뉴스1  4시간 전 네이버뉴스
+			관련뉴스 전체보기
+			[외환] 달러약세 지속
+			[외환] 달러약세 지속…환율 5원 내린 1159.0원 출발 뉴스핌  11시간 전  보내기
+			 24일 서울외환시장에서 달러/원 환율은 전거래일 대비 5.0원 내린 1159.0원에 거래를 시작했다. 달러약세 및 신흥국 통화강세가 지속되는 모습이다. 이날 달러인덱스는 96.12까지 하락해 올해 3월 말 이래 최저치를...
+			 원달러 환율, 5.0원 내린 1159.0원 출발 뉴스토마토  11시간 전
+			 원·달러 환율, 5.0원 내린 1159.0원 개장 뉴시스  11시간 전 네이버뉴스
+			관련뉴스 전체보기
+			뉴스 더보기언론사 선정해당 언론사가 채널 주요기사로 직접 선정한 기사입니다.
+
+
+	</div>
+	<!--
+	<div class="visibox">
+		하단에 위치한 박스
+	</div>
+	<style>
+			  div{
+			/* overflow:hidden; */
+			overflow:auto;
+			display:inline-block;
+			width:250px;
+			height:250px;
+			padding:10px;
+			border:1px solid #000;
+			box-sizing:border-box;
+		}
+		.overbox{
+			/* visibility:visible;
+			visibility:hidden; */
+			/* display:none;*/
+			/* display:block; */
+			/* display:inline; */
+			display:none;
+				}
+				.visibox{
+					display:none;
+				} 
+			-->
+
+				.posbox{
+				/*position:relatice;*/
+				}
+					width:500px;
+					height:500px;
+					border:1px solid #000;
+					box-sizing:border-box;
+				}
+				.posbox div{
+					width:200px;
+					height:200px;
+					background-color: #blue;
+					box-sizing:border-box;
+				}
+				.posbox .box1{
+
+				}
+				.posbox .box2{
+
+				}
+				
+	</style>
+	</div>
+</body>
+</html>

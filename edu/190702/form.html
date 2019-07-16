@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>form 요소</title>
+</head>
+<body>
+<!--
+
+
+form
+fieldset
+legend
+
+input (id/pw 넣는 창같은거)
+select(셀럭트박스 선택할수있는거)
+textarea(직접쓰는란ex 배송시메모란)
+
+input type 속성
+text
+passward
+checkbox
+radio
+hidden
+button
+submit
+reset
+image
+★lable
+
+search
+url
+data
+week
+year
+month
+
+get post >>이미지에 마우스 갖다댔을때 하단에 연결된 주소창주소 보이게 할지 말지
+-->
+<fieldset><!--한영역, 한영역 구분이 되어짐, 테두리쳐짐-->
+	<legend>폼요소 제목</legend>
+<form methd="post" action="">
+	<input type="text" name="" placeholder="아이디를 입력해주세요" value="아이디" readonly=""> <!-- input태그는 단일요소 (뒤에/닫아주는거 없는태그) / value 뭔지 알려줌 / readonly넣으면 안지워짐 disabled-->
+	<input type="password" name="" placeholder="패스워드를 입력해주세요" value="패스워드">
+	<input type="checkbox" name="" id="chk1"><label for="chk1"> html</label> <!-- 체크박스는 중복됨-->
+	<input type="checkbox" name="" id="chk2"><label for="chk1"> css</label>
+	<input type="radio" name="rad" id="rad1"><label for="rad1"> html</label> <!-- 라디오버튼은 중복선택안됨 / name값을 써줘야지만 선택된것들 풀림-->
+	<input type="radio" name="rad" id="rad2"><label for="rad2"> css</label>
+
+
+	<label>
+		<input type="checkbox" name="">
+		<span> html</span>
+	</label> 
+	
+	<label>
+		<input type="checkbox" name="">
+		<span> css</span>
+	</label>
+
+	<label>
+		<input type="radio" name="rad">
+		<span> html</span>
+	</label> 
+	
+	<label>
+		<input type="radio" name="rad">
+		<span> css</span>
+	</label>
+
+
+
+<form method="past" action="https://www.naver.com/"> 	<!--버튼을 누르면 어디로 보낼것이냐 하는게 action값-->
+<fieldset><!--한영역, 한영역 구분이 되어짐, 테두리쳐짐-->
+	<legend>폼요소 제목</legend>
+	<!--아래 button / sumit 얘네들은 label안에 묶이면 안됨-->
+	<input type="button" value="확인" class="btn btn-confirm">
+	<input type="submit" value="전송" class="btn btn-submit">	
+	<input type="image" src="" alt="확인" class="btn-btn-confirm">
+	<input type="reset" value="초기화" class="btn btn-reset">
+	<input type="hidden" value=""><!--hidden: 안보임-->
+
+	<button class="btn">전송</button>
+	<a href="#" class="btn btn-submit">전송</a>
+
+	<label>
+		<select name="">
+			<option>선택</option>
+			<option selected>010</option><!--selected: 고정되어 보여짐-->
+		</select>
+	</label>
+<label>
+	<section name="">
+		<option>선택</option>
+		<optgroup label="서울특별시">
+		<option>서초구</option>
+		<option>강남구</option>
+		<option>구로구</option>
+	</optgroup>
+	</section>
+</label>
+	<label>
+		<textarea cols="75" rows="7" placeholder="내용을 입력해주세요"></textarea>
+		</label>
+
+	<label>
+		<input type="email" name="">
+	</label>
+
+	<label>
+		<input type="url" name="">
+	</label>
+
+	<label>
+		<input type="telephone" name="">
+	</label>
+	
+
+
+
+</fieldset>
+</form>
+</body>
+</html>

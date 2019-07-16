@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>float</title>
+
+<style>
+/* reset */
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+
+
+	/* 레이아웃 */
+	.wrap{
+		width:800px;
+		margin:0 auto;
+
+	}
+
+	.header{
+		width:800px;
+		height:500px;
+		margin:0 auto;
+		background-color:darkslategray;
+	}
+	.main{
+		overflow:hidden;
+		width:800px;
+		margin:0 auto 40px;
+		background-color: olivedrab;
+
+	}
+	.sidemenu{
+		float:left;
+		width:200px;
+		height:500px;
+		background-color: powderblue;
+	}
+	.csection{
+		float:right;
+		width:580px;
+		height:800px;
+		background-color: thistle;
+			}
+	.footer{
+		clear:both;
+		width:800px;
+		height:80px;
+		margin:0 auto;
+		background-color: rosybrown;
+	}
+
+/* 가상요소와 가상클래스 */
+
+
+a:hover{
+	color:blue;
+	text-decoration: underline;
+
+}
+
+a:active{
+	color:tomato;
+
+}
+
+a:focus{
+	text-decoration: underline;
+	outline: none;
+	text-decoration: none;
+
+
+}
+
+a::first-letter{
+	font-size:30px;
+	font-weight:400;
+}
+
+a::first-line{
+	border-l
+}
+
+::before{
+	content:"전";
+}
+
+a::after{
+	content:"후";
+}
+a{
+	color: black;
+
+}
+
+/* contents */
+*csection div{
+	padding:10px;
+	background-color: darkorchid;
+}
+.csection div:first-child{
+	border:2px solid red;
+}
+.csection div:last-child{
+
+}
+
+
+</style>
+</head>
+<body>
+<div class="wrap">
+	<div class="header">
+		<a href="https://www.naver.com/">네이버</a>
+	<div class="main">
+		<div class="sidemenu"></div>
+		<div class="csection">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+	<div class="footer">
+	</div>
+	</div>
+</body>
+</html>

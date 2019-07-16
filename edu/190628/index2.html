@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>layout</title>
+<style>
+ /* reset */
+ *{
+	 margin:0;
+	 padding:0;
+	 color:black;
+	 font-size:13px;
+	 box-sizing:border-box;
+ }
+ body{
+		 padding:15px;
+		 text-align:center;
+		 margin:0 auto;
+	 }
+ 	/*header*/
+	 .header{
+		position: relative;
+		width:800px;
+		margin:0 auto;
+		padding:40px 15px 15px;
+		background-color:lightblue;
+	 }
+	 .header span{
+		position:absolute;
+		width:800px;
+		top:20px;
+		left:400px;
+		transform:translateX(-50%)
+	 }
+
+	 /*nav */
+	 .nav{
+		padding:20px;
+		background-color:gainsboro;
+	 }
+
+	 /*footer */
+	 .footer{
+		width:800px;
+		margin:0 auto;
+		padding:20px 15px 15px;
+		background-color:lightblue;
+		}
+
+	 /* main */
+	 .main{
+		 width:800px;
+		 margin:0 auto;
+	 }
+	 .main::after{
+			content:"";
+			display:block;
+			clear:both;
+		
+	 }
+	 /* main > sidemenu */
+	 .sidemenu{
+			float:left;
+			width:150px;
+			padding:15px;
+			background-color:gainsboro;
+	}
+	/* main > csection */
+	.csection{
+		margin-left:160px;
+		padding:15px;
+		background-color:gainsboro;
+	 }
+
+	 /* main > sidemenu > header */
+	 .sidemenu header{
+			padding:40px 0;
+			background-color:lightblue;
+	 }
+
+		/*main > sidemenu > nav */
+		.sidemenu nav{
+			min-height:150px;
+			margin-top:20px;
+			padding:20px;
+			background-color:lightblue;
+		}
+
+		/* main > csection > header */
+		.csection header{
+			padding:40px 0;
+			background-color:lightblue;
+	 }
+
+	  /*main > csection > article */
+		.csection article{
+			min-height:150px;
+			margin-top:20px;
+			padding:20px;
+			background-color:lightblue;
+		}
+</style>
+
+
+</head>
+<body>
+	<header class="header">
+		<span>header</span>
+		<nav class="nav">
+			nav
+		</nav>
+		<!--nav_END-->
+	</header>
+	<!-- header_END-->
+	<main class="main">
+		<section class="sidemenu">
+			<header>header</header>
+			<nav>nav</nav>
+		</section>
+		<!--section_END-->
+		<section class="csection">
+			<header>header</header>
+			<article>article</article>
+		</section>
+	</main>
+	<!-- main_END-->
+	<footer class="footer">
+		footer
+	</footer>
+	<!-- footer_END-->
+</body>
+</html>
