@@ -1,0 +1,10 @@
+div {
+  background-color: yellow;
+}
+div h1 {
+  font-size: 15px;
+}
+.nav .gnb .dep1 {
+  float: left;
+  color: #f00;
+}
